@@ -1,0 +1,48 @@
+Feature Selection 
+=================
+
+This dataset is about Human Activity Recognition.
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals Body Linear Acceleration and Body Angular Velocity (variables numbered 1, 2 and 3 below). These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+
+Subsequently, the body linear acceleration and angular velocity were time differentiated to obtain corresponding Jerk signals. (variables numbered 3 and 5 below)
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm. (variables numbered from 6 to 10 below)
+
+1. Body Linear Acceleration in Time domain
+2. Gravity Linear Acceleration in Time domain
+3. Time derivative of Body Linear Acceleration (Linear Jerk) in Time domain
+4. Body Angular Velocity in Time domain
+5. Time derivative of Body Angular Velocity (Angular Jerk) in Time domain
+6. Magnitude of Body Linear Acceleration in Time domain
+7. Magnitude of Gravity Linear Acceleration in Time domain
+8. Magnitude of Linear Jerk in Time domain
+9.  Magnitude of Body Angular Velocity in Time domain
+10. Magnitude of Angular Jerk in Time domain
+
+The signals numbered 1 to 5 are measured in 3 axis - X, Y and Z seperately. And consequently there are 3 readings corresponding to each of the 3 dimensions.
+
+The variables numbered 6 to 10 above are magnitudes measured as euclidean distance of the corresponding readings of variables numbered 1 to 5 above.
+
+  
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing the below variables - 
+
+11. Body Linear Acceleration in Frequency domain
+12. Time derivative of Body Linear Acceleration (Linear Jerk) in Frequency domain
+13. Body Angular Velocity in Frequency domain
+14. Magnitude of Body Linear Acceleration in Frequency domain
+15. Magnitude of Linear Jerk in Frequency domain
+16. Magnitude of Body Angular Velocity in Frequency domain
+17. Magnitude of Angular Jerk in Frequency domain
+
+
+For each of these variables the mean and standard deviation values are estimated and the variable names indicate the same.
+
+Thus effectively we have 8 variables (1 through 5 and 11 through 13) which have separate signals on each of X, Y and Z axis i.e. in all 8 * 3 = 24 variables
+
+For magnitude there is one variable for each of the 6 through 10 and 14 through 17, i.e. 9 variables.
+
+For each of these 33 variables (i.e. 24 + 9), we have readings for mean and standard deviation. Thus we have 66 variables in all in the data set.
+
+Further the experiment was carried out by 30 subjects and each of the subjects had 6 activities to perform.
+Thus data set has 180 (30 * 6) entries and 66 variables for each of these entries.
+
